@@ -1,0 +1,38 @@
+=== code-prettify ===
+Contributors: volca
+Donate link: http://www.ooso.net/
+Tags: post, code-highlight, google-code-prettify
+Requires at least: 3.0.0
+Tested up to: 3.0.5
+Stable tag: 0.4
+
+This plugin using google-code-prettify to highlight source code in your posts.  
+
+== Description ==
+This plugin using <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> to highlight source code in your posts.  
+
+== Installation == 
+1. Install and activate the plugin
+1. Use <pre><code> and </code></pre> tag around the code,and post it
+
+== Frequently Asked Questions ==
+Not yet
+
+== Changelog ==
+= 0.4 =
+1. Effective with comments
+
+= 0.3 =
+1. Trim code
+
+= 0.2 =
+1. Change tag to &lt;pre&gt;&lt;code&gt;
+
+= 0.1 =
+First version
+
+== Upgrade Notice ==
+Not yet
+
+== Screenshots ==
+Not yet

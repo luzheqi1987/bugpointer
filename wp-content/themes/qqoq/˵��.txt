@@ -1,0 +1,2 @@
+复制主题目录下的css/editor-post.css里面的内容替换/wp-includes/js/tinymce/themes/advanced/skins/wp_theme/content.css里面的内容（此样式主要是为了个人中心的编辑器的样式保持与前台显示一样，可以不用替换）
+关于启用主题点击个人中心出现404页面，请到后台-设置-固定链接点击一下保存按钮

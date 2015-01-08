@@ -1,0 +1,270 @@
+/*
+Theme Name:fishy 
+Theme URI:http://gwyjs.com
+Description:由啄木游弋独立设计制作的简洁型双栏主题，集成了读者墙、最新评论、热评文章、随机文章、标签云等七个自定义小工具，首页展示随机缩略图，配色方案采用橙黄+白+黑，明快醒目。  
+Version:V1.3 
+Author:<a href="http://gwyjs.com">啄木游弋</a>
+Author URI:http://gwyjs.com 
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer
+-------------------------------------------------------------- */
+html, body, div, p, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead{
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+span{
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+
+p {text-indent: 2em;}
+
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol,ul,li {
+	list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 1;
+	border-width: 1;
+	border-color: black;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a:link,a:visited{text-decoration:none;}
+
+/* basic structure */
+body{
+	font-family:Arial,微软雅黑,华文细黑,宋体;
+	font-size:12px;
+	margin:0 auto;
+	color:#555555;
+	line-height:20px;
+	background:#ebebeb
+	}
+
+#wrapper{
+		padding-top:15px;margin:45px auto 20px auto;
+		width:1020px;
+		background:#ffffff;
+		border-radius:15px;
+		-moz-border-radius:15px;-webkit-border-radius:15px;
+		-moz-box-shadow:0px 0px 10px #333;
+		-webkit-box-shadow:0px 0px 10px #333;
+		border-bottom:5px #d0e0f0 solid;
+		}
+#main{background:url(images/bg-content-inner.gif) repeat-y;overflow:hidden;padding:20px 10px 0 10px;}
+#content {width:645px;float:left;}
+#sidebar{width:320px;float:left;padding-left:30px;}
+
+/* header */
+#header{padding-left:20px;color:black;margin-bottom:10px;}
+#blog-title{margin:10px 0;}
+#blog-title a{font-size:275%;text-decoration:none;color:black;}
+#blog-description{font-size:120%;font-style:italic;}
+
+/* 进度条 */
+#w-loading{z-index:99999;position:absolute;left:0;top:1px;width:100%;height:40px;}
+#w-loading div{width:0;height:40px;background:#d0e0f0;}
+
+/* search-box */
+#search-box{float:right;height: 36px; width: 300px; background: #E9E9E9; border-radius: 3px;margin-right:100px;}
+#search-from {height: 30px; padding: 6px 0 0 5px; left: 0; z-index: 10;}
+#search-from label {border-left: 1px solid #d0e0f0; border-top: 1px solid #d0e0f0; border-bottom: 1px solid #d0e0f0; background: white; float: left; height: 22px; width: 230px; overflow: hidden;}
+#search-from #search-txt {margin: 0px; padding: 0px; border: 0px; color: #BCBCBC; font-size: 12px; padding-left: 3px; height: 26px; line-height: 22px; width: 226px;}
+#search-from #search-btn {margin: 0px; padding: 0px; border: none; background: #d0e0f0; color: black; cursor: pointer; font-size: 14px; float: left; height: 24px; line-height: 26px; width: 58px;}
+
+/* content */
+.index-entry-body{}
+.entry-title{font-weight:bold;font-size:160%;margin-bottom:2px;padding-bottom:5px;border-bottom:1px #dfdfdf solid;}
+.entry-title a{color:black;text-decoration:none;}
+.entry-title a:hover{color:#d0e0f0;text-decoration:underline;}
+.entry-meta{margin-bottom:5px;overflow:hidden;}
+.entry-meta a{color:black}
+.comments-link{float:right}
+.entry-content{overflow:hidden;margin-bottom:0;}
+.thumbnail{width:246px;float:left;margin:5px 10px;line-height:0;}
+.shadowimg236{background:url('images/shadowimg236.gif') no-repeat;display:block;height:20px;width:246px;}
+#nav-below{margin:10px auto;padding:0 20px;font-size:160%;overflow:hidden}
+#nav-below a{color:#d0e0f0}
+.nav-previous{padding:5px 10px;width:200px;float:left;margin-right:140px;}
+.nav-next{padding:5px 10px;width:200px;float:left;}
+
+.single-entry-body{}
+.single-entry-body p{font-size:120%;text-indent:20px;line-height:180%}
+.single-entry-body p a{color:#d0e0f0}
+.entry-utility-single{margin:5px auto;border:1px #d0e0f0 solid;padding:5px 5px 5px 80px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;background:#ccc url('http://gwyjs.com/wp-content/uploads/2012/04/careful.png') no-repeat center left;}
+.entry-utility-single a{color:#d0e0f0;text-decoration:underline;}
+#ding{text-align:center;}
+.navigation-single{overflow:hidden;margin:10px auto;padding:0 10px;font-size:120%;color:#d0e0f0}
+.navigation-single a{color:#d0e0f0}
+.navigation-single a:hover{color:green}
+.nav-previous-single{float:left}
+.nav-next-single{float:right}
+#wumiiDisplayDiv{margin:5px auto;padding-left:20px}
+
+/* sidebar */
+#primary a,#secondary a{color:black;font-weight:normal;}
+#primary a:hover,#secondary a:hover{color:#d0e0f0;text-decoration:underline}
+.sidebar >li{margin-bottom:10px;font-size:13px;border:1px #bbb solid;border-radius:5px;}
+.sidebar>li>ul{margin-left:20px;padding:0;margin-bottom:5px}
+.sidebar>li>ul>li{margin-top:5px;}
+
+/* widgets */
+#sidebar .widget-title,#footer-widget .widget-title{font-size:16px;font-weight:bold;}
+#sidebar .widget-title{text-align:center;background:#d0e0f0;border-top-left-radius:5px;border-top-right-radius:5px;padding:5px 0;color:black}
+.widget_links{overflow:hidden;}
+.widget_links li{border-bottom:1px #ccc solid;padding:3px 6px;text-align:left;width:40%;float:left;margin-right:10px;}
+.ActiveReaderWidget{overflow:hidden;padding-bottom:10px;}
+.ActiveReaderWidget ul{margin-top:5px;}
+.ActiveReaderWidget li{
+	list-style:none;
+	float:left;
+	border:none;
+	line-height:0;
+	margin:0;
+	margin-right:10px;
+	margin-top:5px;
+						}
+.ActiveReaderWidget img.avatar{
+	width:38px;
+	height:38px;
+	border:1px solid #ddd;padding:2px;margin:0 1px 0 0;
+							   }
+.RecentCommentsWidget img.avatar{width:30px;height:30px;float:left;position:relative;border:1px solid #ddd;padding:2px;margin:0 5px 0 0;}
+.RecentCommentsWidget li{padding:2px 0;margin-top:6px;margin-bottom:6px;line-height:18px;}
+.comment_author{color:#aaa;font-size:12px;}
+.WP_Admin ul{overflow:hidden;}
+.WP_Admin li{width:48%;float:left;margin-right:5px;}
+#tagcloud{overflow:hidden;padding-left:10px;padding-bottom:10px;}
+#tagcloud a{color:black;float:left;margin-left:10px;margin-top:10px;padding:2px 0 2px 10px;background:#f5f5f5;text-decoration:none;font-size:12px;border-radius:5px;}
+.tag_num{background:#d0e0f0;color:black;padding:3px 5px;border-radius:10px;font-size:16px;font-weight:bold;}
+
+/* Comments */
+.comments_title {padding:5px;background-color:#dfdfdf;text-align:center;border-radius:5px;margin:0;}
+#comments {font-size:1.5em; color:#20A3D3;}
+.commentlist {margin:5px 0 15px 0;}
+.commentlist li {padding:20px; margin:10px 0;list-style:none;}
+.thread-even {background:#F9F9F9;}
+.thread-odd {background:#F2F2F2}
+.commentlist li .avatar {float:left;border:1px #ccc solid; padding:4px;border-radius:3px;margin-right:15px;}
+.commentlist li p {line-height:22px; word-wrap:break-word;text-indent:0;}
+.comment-reply-link {color:#1294C3!important;}
+.children {padding:10px; margin-top:10px; border-left:3px solid #DDD; background:#FFF;margin-left:0;}
+.children ul,.children ul ul,.children ul ul ul,.children ul ul ul ul {padding:0; margin:0; border:none;}
+.children li {padding:0; margin:0; background:#FFF;}
+.children .cite {margin:0;}
+.children p {border-bottom:1px dashed #EEEEEE; margin-bottom:10px; padding:10px;}
+.comment-page {background:#F2F2F2; padding:10px; margin:15px 0; text-align:center;}
+.comment-page a {color:#6FAD1B; padding:3px 8px; background:#f9f9f9; margin:0 3px;}
+.comment-span {padding:3px 8px;}
+.cite {margin-bottom:10px; padding-right:70px; color:#AAA;}
+.cite a {color:#AAA;}
+.cite strong {font-size:120%; color:black;}
+.cite strong a {color:black;}
+.cite span {font-size:90%;}
+a.reply,a.reply:hover {color:#1294C3;}
+.fn {display:none;}
+#success_1 {display:block!important; line-height:16px; padding:10px 0 0 0; color:#AAA;}
+#success_1 img {float:left; border:none; padding:0 8px 0 0;}
+#commentform {padding:20px; background:#F2F2F2; overflow:hidden; zoom:1; position:relative;}
+.signed {height:22px;}
+#comment {border:1px solid #BBB; padding:4px; width:98%; line-height:20px; margin-bottom:10px;}
+.authorinfo {margin-bottom:10px;}
+#commentform input {width:120px; padding:4px 0px 4px 55px; border:1px solid #BBB;}
+#commentform p{text-indent:0;}
+#commentform label {margin-left:-35px;}
+#commentform label small {position:relative; left:-140px; _top:-3px; +top:-3px;}
+#submit {border:none!important; background:#DDD; width:auto!important; padding:6px 15px!important; font-size:110%;}
+.trackbacks-pingbacks {margin:20px 0 0 0;}
+.trackbacks-pingbacks h3 {font-size:2em; color:#20A3D3;}
+#pinglist {margin-top:15px;}
+#pinglist li {padding:6px 10px; margin:2px 0; background:#F9F9F9;}
+#top_foot {position:absolute; top:40%; left:50%; margin-left:500px; display:block;}
+#top_foot div {margin:10px 0; width:29px; text-indent:-99em; position:relative; cursor:pointer;}
+#top {background-position:-221px -243px; height:15px;}
+#top:hover {background-position:-192px -243px;}
+#foot {background-position:-221px -285px; height:15px;}
+#foot:hover {background-position:-192px -285px;}
+#tocomment {background-position:-221px -258px; height:27px;}
+#tocomment:hover {background-position:-192px -258px;}
+
+/* footer */
+#footer{overflow:hidden;background:#292929;color:#cdcdcd;margin:0 auto;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;padding:20px 0 0 0}
+#last{background:#333334;padding:10px 25px;overflow:hidden}
+#last a{color:white}
+#last a:hover{text-decoration:underline}
+#money li{float:left;list-style:none;margin-left:10px;}
+#money a{color:#cdcdcd}
+
+#footer-widget .widget-title{padding-left:80px;}
+#footer-widget ul {overflow:hidden}
+#footer-widget ul li{float:left;width:32%;}
+#footer-widget ul li ul{margin-left:50px;}
+#footer-widget ul li ul li{float:none;width:100%}
+#footer-widget a{color:white}
+
+/* 侧栏滚屏按钮 */
+#shangxia{position:fixed;top:45%;right:50%;display:block;margin-right:-560px}
+#shang,#comt,#xia{background:url(images/huadong.png) no-repeat;position:relative;cursor:pointer;height:25px;width:29px;margin:10px 0 0}
+#comt{background-position:left -30px;height:32px}
+#xia{background-position:left -68px}
+#comt:hover{background-position:right -30px}
+#shang:hover{background-position:right 0}
+#xia:hover{background-position:right -68px}
+
+/* 引用样式 */
+blockquote {
+background:#f9f9f9;
+border-left:10px solid #ccc;
+margin:1.5em 10px;
+padding:.5em 10px;
+quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+color:#ccc;
+content:open-quote;
+font-size:4em;
+line-height:.1em;
+margin-right:.25em;
+vertical-align:-.4em;
+}
+blockquote p {
+display:inline;
+}
